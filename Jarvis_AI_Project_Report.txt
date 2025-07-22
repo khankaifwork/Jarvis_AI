@@ -1,0 +1,36 @@
+
+Jarvis AI Voice Assistant - Project Report
+
+Overview:
+This is a voice-based AI assistant developed in Python that integrates local speech recognition and text-to-speech capabilities with an AI 
+backend using the Ollama language model. It listens for a wake word and then performs actions or answers questions.
+
+Key Features:
+- Voice-activated with wake word: "Jarvis" (customizable)
+- Can open websites like Google, Facebook, YouTube
+- Can play predefined songs via YouTube links
+- Fetches and reads top news using News API
+- Integrates with Ollama (local language model) for general questions
+- Graceful termination with voice command ("close the function")
+
+Technologies Used:
+- Python
+- speech_recognition (for voice input)
+- pyttsx3 (for text-to-speech)
+- webbrowser (to open URLs)
+- requests (to fetch news)
+- dotenv (for securing API keys)
+- Ollama (local AI model for chat)
+
+Security Improvements:
+- API keys are now stored securely in a `.env` file and not hardcoded
+- `.env` is ignored by Git using `.gitignore`
+
+GitHub Repository:
+The project is publicly available on GitHub, version controlled for updates, and can serve as a portfolio piece.
+
+Future Suggestions:
+- Add GUI interface for accessibility
+- Add support for more commands (system-level, app-launching)
+- Fine-tune or replace Ollama model for faster responses
+
